@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+/*PRESENTATION*/
+body {
+  margin: 0;
+  font-family: 'Roboto Condensed', monospace;
+  background-color: #EEE; }
+
+nav ul {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: #343434;
+  border-top: 3px solid #0598CC; }
+  nav ul li {
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #FFF;
+    cursor: pointer; }
+    nav ul li ul {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      list-style-type: none;
+      transform: translateY(-40px); }
+    nav ul li:hover {
+      background-color: green; }
+      nav ul li:hover ul {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0); }
+
+nav > ul > li {
+  display: inline-block; }
+
+nav ul li ul, nav ul li {
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s; }
+
+/*# sourceMappingURL=style.css.map */
